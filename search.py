@@ -93,8 +93,8 @@ def main():
     for i in range(1, 20):
         if i > 10:
             break
-        time.sleep(random.uniform(2.1, 3.1))
-        for j in range(3, 10):
+        time.sleep(random.uniform(1.5, 2.1))
+        for j in range(1, 20):
             try:
                 search_result_xpath = f"//div[{i}]" + "/div" * j + "/a/h3"
                 link = driver.find_element(By.XPATH, f"{search_result_xpath}")
